@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de Patrimônio</title>
+    <link rel="stylesheet" href="/CSS/edicao.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Edição de Patrimônio</h2>
+        <p>Preencha o formulário abaixo</p>
+        <div class="form-container">
+            <div class="image-upload">
+                <img src="/Folder/IMG/Group.png" alt="Imagem do patrimônio">
+                <button class="add-image">Adicionar imagem</button>
+                <button class="remove-image">X</button>
+            </div>
+            <form>
+                <label for="codigo">Código NI *</label>
+                <input type="text" id="codigo" value="722998" readonly>
+                
+                <label for="descricao">Descrição *</label>
+                <input type="text" id="descricao" value="Workstation Z2 G5 - Intel 10700 16GB Ram, SSD 256GB">
+                
+                <label for="unidade">Unidade *</label>
+                <select id="unidade">
+                    <option selected>CFP - L27 - Escola SENAI "Prof. Vicente Amato"</option>
+                </select>
+                
+                <label for="quantidade">Quantidade *</label>
+                <input type="number" id="quantidade" value="200">
+                
+                <label for="categoria">Categoria *</label>
+                <select id="categoria">
+                    <option selected>Máquinas</option>
+                </select>
+                
+                <div class="checkbox">
+                    <input type="checkbox" id="confirmacao" checked>
+                    <label for="confirmacao"> Afirmo que os bens disponibilizados, encontram-se em plenas condições de uso. (Obs: Ao ser transferido, caso seja constatado a necessidade de manutenção, as despesas serão arcadas pela unidade de origem dos bens).</label>
+                </div>
+                
+                <div class="buttons">
+                    <button type="button" class="cancel">Cancelar</button>
+                    <button type="submit" class="save">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

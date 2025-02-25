@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Patrimônio</title>
+    <link rel="stylesheet" href="/CSS/cadastro_patrimonio.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Patrimônio</h1>
+        <p>Preencha o formulário abaixo</p>
+        
+        <div class="form-container">
+            <div class="image-upload">
+                <div class="image-preview">
+                    <img src="/Folder/IMG/Group.png" alt="Imagem do Patrimônio">
+                </div>
+                <button class="upload-btn">Adicionar imagem</button>
+                <button class="remove-btn">✖</button>
+            </div>
+
+            <form>
+                
+                <input type="text" id="codigo" placeholder="Digite o código NI" required>
+                <input type="text" id="descricao" placeholder="Digite a descrição" required>
+                <select id="unidade" required>
+                    <option value="">Selecione a unidade</option>
+                    <option value="Unidade 1">Unidade 1</option>
+                    <option value="Unidade 2">Unidade 2</option>
+                </select>
+                <input type="number" id="quantidade" placeholder="Quantidade" required>
+                <select id="categoria" required>
+                    <option value="">Selecione a categoria</option>
+                    <option value="TI">TI</option>
+                    <option value="Administração">Administração</option>
+                </select>
+
+                <div class="checkbox-container">
+                    <input type="checkbox" id="confirmacao">
+                    <label for="confirmacao">
+                        Afirmo que os bens disponibilizados, encontram-se em plenas condições de uso. (Obs: Ao ser transferido, caso seja constatado a necessidade de manutenção, as despesas serão arcadas pela unidade de origem dos bens).
+                    </label>
+                </div>
+
+                <div class="buttons">
+                    <button type="button" class="cancel-btn">Cancelar</button>
+                    <button type="submit" class="save-btn">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
